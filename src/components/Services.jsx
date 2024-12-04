@@ -1,4 +1,5 @@
 import React from "react";
+import Tilt from "react-parallax-tilt";
 
 const Services = () => {
   const services = [
@@ -40,16 +41,24 @@ const Services = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div
+            <Tilt
               key={index}
-              className="bg-blue-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300"
+              glareEnable={true}
+              glareMaxOpacity={0.5}
+              glareColor="#ffffff"
+              glarePosition="bottom"
+              tiltMaxAngleX={15}
+              tiltMaxAngleY={15}
+              scale={1.05} // Slight zoom on hover
             >
-              <div className="text-4xl mb-4">{service.icon}</div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                {service.title}
-              </h3>
-              <p className="text-gray-600">{service.description}</p>
-            </div>
+              <div className="bg-blue-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                <div className="text-4xl mb-4">{service.icon}</div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                  {service.title}
+                </h3>
+                <p className="text-gray-600">{service.description}</p>
+              </div>
+            </Tilt>
           ))}
         </div>
       </div>

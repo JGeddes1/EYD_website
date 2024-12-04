@@ -23,21 +23,21 @@ const Gallery = () => {
     },
     {
       id: 1,
-      title: "Project One",
+      title: "Project four",
       description: "This is the first project description.",
-      image: "https://via.placeholder.com/300x200?text=Project+1",
+      image: "https://via.placeholder.com/300x200?text=Project+4",
     },
     {
       id: 2,
-      title: "Project Two",
+      title: "Project five",
       description: "This is the second project description.",
-      image: "https://via.placeholder.com/300x200?text=Project+2",
+      image: "https://via.placeholder.com/300x200?text=Project+5",
     },
     {
       id: 3,
-      title: "Project Three",
+      title: "Project six",
       description: "This is the third project description.",
-      image: "https://via.placeholder.com/300x200?text=Project+3",
+      image: "https://via.placeholder.com/300x200?text=Project+6",
     },
     // Add more projects as needed
   ];

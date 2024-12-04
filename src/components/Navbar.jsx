@@ -4,7 +4,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className=" bg-white h-20 z-50 p-4 shadow-lg">
+    <nav className=" bg-green-50 bg-opacity-65 h-20 z-50 p-4 shadow-lg">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-black text-2xl font-bold">EDY</div>
 
@@ -20,7 +20,7 @@ const Navbar = () => {
         <ul
           className={`md:flex space-x-6 ${
             isOpen ? "block" : "hidden"
-          } md:block absolute md:relative bg-white w-full md:w-auto top-20 md:top-auto left-0 md:left-auto z-50`}
+          } md:block absolute md:relative bg-green-50 bg-opacity-65 w-full md:w-auto top-20 md:top-auto left-0 md:left-auto z-50`}
         >
           <li>
             <a

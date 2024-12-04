@@ -41,7 +41,7 @@ const HeroSection = () => {
       </div>
 
       {/* Text Overlay */}
-      <div className="absolute inset-0 flex flex-col justify-center items-center bg-blue-200 bg-opacity-50">
+      <div className="absolute inset-0 flex flex-col justify-center items-center bg-green-50 bg-opacity-65">
         <h1 className="text-white text-4xl md:text-6xl font-bold text-center">
           Welcome
         </h1>

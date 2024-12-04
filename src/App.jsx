@@ -5,6 +5,7 @@ import Navbar from "./components/NavBar";
 import About from "./components/About";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -27,12 +28,7 @@ const App = () => {
       </main>
       <Gallery />
       <Contact></Contact>
-      <main className="container mx-auto mt-8">
-        <h1 className="text-3xl font-bold text-gray-700">
-          Welcome to My Project
-        </h1>
-        <p className="mt-4 text-gray-500">This is the body content.</p>
-      </main>
+      <Footer />
     </div>
   );
 };
