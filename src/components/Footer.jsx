@@ -3,15 +3,23 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-800 text-white py-6">
+    <footer className="bg-blue-950 text-gray-300 py-6">
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Footer Left */}
-          <div className="mb-4 md:mb-0">
-            <h3 className="text-2xl font-bold">EDY</h3>
-            <p className="mt-2 text-gray-400 text-sm">
-              Your company slogan or brief description goes here.
-            </p>
+          <div className="mb-4 flex space-x-4 md:mb-0">
+            <h3 className="text-2xl font-bold">
+              <img
+                src="src\assets\EYD_PDF.jpg"
+                alt="CIAT"
+                className="h-20 w-auto object-contain"
+              />
+            </h3>
+            <img
+              src="src\assets\8cbae8bd-17a7-4e91-8fae-4d37be30818a.jpg"
+              alt="CIAT"
+              className="h-20 w-auto object-contain"
+            />
           </div>
 
           {/* Footer Center */}
@@ -36,7 +44,7 @@ const Footer = () => {
             </a>
           </div>
 
-          {/* Footer Right - Social Media Icons */}
+          {/* Footer Right - Social Media Icons 
           <div className="flex space-x-4">
             <a
               href="https://facebook.com"
@@ -66,7 +74,7 @@ const Footer = () => {
             >
               <FaLinkedin className="text-gray-300 hover:text-white transition duration-200" />
             </a>
-          </div>
+          </div>*/}
         </div>
 
         {/* Footer Bottom */}

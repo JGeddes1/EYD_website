@@ -4,9 +4,17 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className=" bg-green-50 bg-opacity-65 h-20 z-50 p-4 shadow-lg">
-      <div className="container mx-auto flex justify-between items-center">
-        <div className="text-black text-2xl font-bold">EDY</div>
+    <nav className="bg-white-100 h-28 z-50 p-4 shadow-lg">
+      <div className="container mx-auto flex justify-between items-center h-full">
+        <div className="text-black text-2xl font-bold h-full">
+          <a href="/" className="h-full">
+            <img
+              src="src/assets/EYD_PDF.jpg"
+              alt="Logo"
+              className="h-full w-auto object-contain"
+            />
+          </a>
+        </div>
 
         {/* Hamburger Menu Button */}
         <button
@@ -20,12 +28,12 @@ const Navbar = () => {
         <ul
           className={`md:flex space-x-6 ${
             isOpen ? "block" : "hidden"
-          } md:block absolute md:relative bg-green-50 bg-opacity-65 w-full md:w-auto top-20 md:top-auto left-0 md:left-auto z-50`}
+          } md:block absolute md:relative bg-white-100  w-full md:w-auto top-20 md:top-auto left-0 md:left-auto z-50`}
         >
           <li>
             <a
               href="#"
-              className="text-black block p-4 hover:text-slate-300 transition"
+              className="text-black block p-4 hover:text-white transition"
             >
               Home
             </a>

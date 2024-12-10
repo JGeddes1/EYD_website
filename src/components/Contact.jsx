@@ -46,7 +46,7 @@ const Contact = () => {
     <section
       id="contact"
       className="py-12 px-6 bg-white"
-      data-aos="fade-left"
+      data-aos="fade-in"
       data-aos-duration="1500"
       data-aos-delay="500"
     >
@@ -56,9 +56,20 @@ const Contact = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
             Contact Us
           </h2>
-          <p className="text-gray-600 mb-6">
-            We'd love to hear from you! Please fill out the form below.
+          <p className="text-gray-600 mb-4">
+            We'd love to hear from you! Please fill out the form below or call
+            us directly.
           </p>
+          <p className="text-gray-800 font-semibold mb-6">
+            📞 Phone:{" "}
+            <a
+              href="tel:+44078009381466"
+              className="text-blue-500 hover:underline"
+            >
+              07800938146
+            </a>
+          </p>
+
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="flex flex-col">
               <label htmlFor="name" className="text-gray-800 text-lg mb-2">

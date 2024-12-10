@@ -4,22 +4,33 @@ import Tilt from "react-parallax-tilt";
 const Services = () => {
   const services = [
     {
-      title: "Web Development",
-      description:
-        "We provide custom web development services, creating responsive, high-performance websites tailored to your needs.",
-      icon: "🌐", // Replace with an actual icon or image if desired
+      title: "Planning",
+      description: [
+        "Home visit and advice",
+        "Research on materials & exemplar designs",
+        "Measured survey of the property",
+        "Existing plans and elevations drawn to scale",
+        "Client ideas & proposals drawn to scale",
+        "Design experience in the local area, ideas and architectural support",
+        "Amendments to drawings",
+        "To complete the local authority planning application forms",
+        "Submission & liaison with Planning Authority",
+        "Additional copies of planning/permitted development drawings",
+      ],
+      icon: "📋", // Replace with an actual icon or image if desired
     },
     {
-      title: "Mobile App Development",
-      description:
-        "Our team builds mobile applications for iOS and Android, focusing on user-friendly design and robust functionality.",
-      icon: "📱", // Replace with an actual icon or image if desired
-    },
-    {
-      title: "SEO Optimization",
-      description:
-        "We help improve your website's search engine rankings with targeted SEO strategies, increasing your visibility online.",
-      icon: "📈", // Replace with an actual icon or image if desired
+      title: "Building Regulations Support",
+      description: [
+        "Detailed technical drawings and notes for Building Control/Builder",
+        "Drawings include locations of electrical sockets, switches, radiators, etc.",
+        "Liaising with structural engineer and other professionals",
+        "Submission & liaison with Local Authority Building Control",
+        "Additional copies of Building Regulations drawings",
+        "Revisions to drawings as necessary",
+        "Further copies of Building Regulations approved plans for builders",
+      ],
+      icon: "🏗️",
     },
   ];
 
@@ -39,7 +50,7 @@ const Services = () => {
           Discover the range of services we offer to help your business thrive.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <Tilt
               key={index}
@@ -51,12 +62,22 @@ const Services = () => {
               tiltMaxAngleY={15}
               scale={1.05} // Slight zoom on hover
             >
-              <div className="bg-blue-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+              <div className="bg-slate-100 bg-opacity-65 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
                 <div className="text-4xl mb-4">{service.icon}</div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                <h3 className="text-2xl font-semibold text-gray-800 mb-2">
                   {service.title}
                 </h3>
-                <p className="text-gray-600">{service.description}</p>
+                <ul className="space-y-4">
+                  {service.description.map((item, idx) => (
+                    <li
+                      key={idx}
+                      className="flex items-start space-x-2 text-gray-700"
+                    >
+                      <span className="text-blue-500 ">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </Tilt>
           ))}

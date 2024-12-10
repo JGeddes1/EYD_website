@@ -12,7 +12,7 @@ const HeroSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000);
+    }, 50000);
 
     return () => clearInterval(interval); // Cleanup on component unmount
   }, [images.length]);
@@ -41,11 +41,11 @@ const HeroSection = () => {
       </div>
 
       {/* Text Overlay */}
-      <div className="absolute inset-0 flex flex-col justify-center items-center bg-green-50 bg-opacity-65">
-        <h1 className="text-white text-4xl md:text-6xl font-bold text-center">
+      <div className="absolute inset-0 flex flex-col justify-center items-center bg-slate-100 bg-opacity-50">
+        <h1 className="text-slate-600  text-4xl md:text-6xl font-bold text-center">
           Welcome
         </h1>
-        <p className="text-white text-xl md:text-2xl mt-4 text-center">
+        <p className="text-slate-600 text-xl md:text-2xl mt-4 text-center">
           Please scroll to find out more about the company
         </p>
       </div>

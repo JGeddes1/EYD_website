@@ -4,7 +4,7 @@ import L from "leaflet";
 import "leaflet/dist/leaflet.css"; // Import the Leaflet CSS for styling
 
 const MapWithMarker = () => {
-  const position = [51.505, -0.09]; // Latitude and longitude for the center of the map
+  const position = [55.3, -1.68]; // Latitude and longitude for the center of the map
 
   return (
     <div style={{ height: "500px", width: "100%" }}>
