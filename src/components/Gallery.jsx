@@ -16,7 +16,7 @@ const Gallery = () => {
       id: 2,
       title: "Kings Avenue, Morpeth",
       description:
-        "Conversion of single storey farm store and office space into a 2 bed annex. The client was keen to keep as much of the existing masonry walls, services and windows in situ. This led to a pragmatic approach to room location and where kitchens etc could be located.",
+        "Single storey rear extension and ground floor remodel to include breakfast room, utility, downstairs WC and a plant room. As part of the brief the end user was keen to increase the connection between the indoor and outdoor space. To achieve this large skylights and multiple external doorways been introduced.",
       images: [
         "src/assets/KingsAvenue/ele_1.jpg",
         "src/assets/KingsAvenue/ele_2.jpg",
@@ -24,23 +24,23 @@ const Gallery = () => {
     },
     {
       id: 3,
-      title: "Parkside, Morpeth",
+      title: "Parkside House, Wallsend",
       description:
-        "Conversion of single storey farm store and office space into a 2 bed annex. The client was keen to keep as much of the existing masonry walls, services and windows in situ. This led to a pragmatic approach to room location and where kitchens etc could be located.",
+        "Single storey rear extension and ground floor remodel to include breakfast room, utility, downstairs WC and a plant room. As part of the brief the end user was keen to increase the connection between the indoor and outdoor space. To achieve this large skylights and multiple external doorways been introduced.",
       images: [
         "src/assets/Parkside/0701_View_01_01.jpg",
-        "https://via.placeholder.com/300x200?text=Fullbeck+2",
+        "src/assets/Parkside/0701_View_02_01.jpg",
         "https://via.placeholder.com/300x200?text=Fullbeck+3",
       ],
     },
     {
       id: 4,
-      title: "Swindale, Morpeth",
+      title: "Swindale, Killingworth",
       description:
-        "Conversion of single storey farm store and office space into a 2 bed annex. The client was keen to keep as much of the existing masonry walls, services and windows in situ. This led to a pragmatic approach to room location and where kitchens etc could be located.",
+        "Small Housing estate development circa 20 units for affordable housing.",
       images: [
         "src/assets/Swindale/0699_View_01_01.jpg",
-        "https://via.placeholder.com/300x200?text=Fullbeck+2",
+        "src/assets/Swindale/0699_View_02_01.jpg",
         "https://via.placeholder.com/300x200?text=Fullbeck+3",
       ],
     },
@@ -81,13 +81,14 @@ const Gallery = () => {
 
   return (
     <div
+      id="gallery"
       className="p-8"
       data-aos="fade-up"
       data-aos-duration="1500"
       data-aos-delay="200"
     >
       {/* Gallery Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols- md:grid-cols-4 gap-4">
         {projects.map((project) => (
           <div
             key={project.id}
@@ -108,8 +109,8 @@ const Gallery = () => {
 
       {/* Modal */}
       {isModalOpen && selectedProject && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center overflow-y-auto">
-          <div className="relative bg-white overflow-y-auto max-h-full w-3/4 p-6 rounded-lg shadow-lg">
+        <div className=" inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center overflow-y-auto m-4">
+          <div className="relative bg-white overflow-y-auto max-h-full w-3/4 p-6 shadow-lg">
             <div className="flex items-center w-full">
               {/* Responsive Arrows */}
               <div className="w-1/12 flex justify-center">

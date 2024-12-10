@@ -33,7 +33,7 @@ const Navbar = () => {
           <li>
             <a
               href="#"
-              className="text-black block p-4 hover:text-white transition"
+              className="text-black block p-4 hover:text-color-paleGreen transition"
             >
               Home
             </a>
@@ -41,17 +41,17 @@ const Navbar = () => {
           <li>
             <a
               href="#about"
-              className="text-black block p-4 hover:text-slate-300 transition"
+              className="text-black block p-4 hover:text-color-paleGreen transition"
             >
               About
             </a>
           </li>
           <li>
             <a
-              href="#services"
-              className="text-black block p-4 hover:text-slate-300 transition"
+              href="#gallery"
+              className="text-black block p-4 hover:text-color-paleGreen transition"
             >
-              Services
+              Projects
             </a>
           </li>
           <li>

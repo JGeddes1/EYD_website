@@ -45,7 +45,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-12 px-6 bg-white"
+      className="py-12 px-6 bg-gray-100"
       data-aos="fade-in"
       data-aos-duration="1500"
       data-aos-delay="500"

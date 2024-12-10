@@ -10,13 +10,13 @@ const Footer = () => {
           <div className="mb-4 flex space-x-4 md:mb-0">
             <h3 className="text-2xl font-bold">
               <img
-                src="src\assets\EYD_PDF.jpg"
+                src="src\assets\EYD_no_bgrd.svg"
                 alt="CIAT"
                 className="h-20 w-auto object-contain"
               />
             </h3>
             <img
-              src="src\assets\8cbae8bd-17a7-4e91-8fae-4d37be30818a.jpg"
+              src="src\assets\CIAT.svg"
               alt="CIAT"
               className="h-20 w-auto object-contain"
             />
@@ -31,16 +31,16 @@ const Footer = () => {
               About
             </a>
             <a
-              href="#services"
+              href="#gallery"
               className="text-gray-300 hover:text-white transition duration-200"
             >
-              Services
+              Projects
             </a>
             <a
-              href="#contact"
+              href="#"
               className="text-gray-300 hover:text-white transition duration-200"
             >
-              Contact
+              Home
             </a>
           </div>
 
@@ -79,7 +79,7 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className="text-center mt-6 text-gray-400 text-sm">
-          <p>&copy; 2024 EDY. All rights reserved.</p>
+          <p>&copy; 2025 Elliott Young Designs. All rights reserved.</p>
         </div>
       </div>
     </footer>

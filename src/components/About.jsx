@@ -11,7 +11,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className=" py-12 px-6 md:px-12"
+      className=" py-12 px-6 md:px-12 bg-gray-100"
       data-aos="fade-in"
       data-aos-duration="1500"
       data-aos-delay="50"

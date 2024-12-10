@@ -18,12 +18,12 @@ const App = () => {
       <Services />
       <DesignProcess />
       <main
-        className="container mx-auto mt-8"
+        className="container  mx-auto mt-8 "
         data-aos="fade-up"
         data-aos-duration="1500"
         data-aos-delay="300"
       >
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-800  mb-6">
           Previous Projects
         </h1>
       </main>
