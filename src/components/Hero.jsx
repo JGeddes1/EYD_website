@@ -23,8 +23,8 @@ const HeroSection = () => {
 
   return (
     <section
-      className="relative h-full w-full z-0"
-      style={{ height: "calc(100vh - 5rem)" }} // Adjust the 4rem to match your navbar height
+      className="relative h-full w-full z-0  min-h-[500px]"
+      style={{ height: "calc(100vh - 5rem) " }} // Adjust the 4rem to match your navbar height
     >
       {/* Background Slideshow */}
       <div className="absolute inset-0 overflow-hidden">

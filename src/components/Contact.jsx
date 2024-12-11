@@ -5,6 +5,7 @@ import MapWithMarker from "./MapWithMarker";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
+    location: "",
     email: "",
     message: "",
   });
@@ -24,16 +25,16 @@ const Contact = () => {
     // Send the form data to EmailJS
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID", // Replace with your EmailJS service ID
-        "YOUR_TEMPLATE_ID", // Replace with your EmailJS template ID
+        "service_hae5slq", // Replace with your EmailJS service ID
+        "template_bmhid93", // Replace with your EmailJS template ID
         e.target,
-        "YOUR_USER_ID" // Replace with your EmailJS user ID
+        "hIRtwJZCOGz4oeqeH" // Replace with your EmailJS user ID
       )
       .then(
         (result) => {
           console.log("Email sent: ", result.text);
           setStatus("Success! Your message has been sent.");
-          setFormData({ name: "", email: "", message: "" }); // Clear form
+          setFormData({ name: "", location: "", email: "", message: "" }); // Clear form
         },
         (error) => {
           console.error("Error sending email: ", error.text);
@@ -57,8 +58,8 @@ const Contact = () => {
             Contact Us
           </h2>
           <p className="text-gray-600 mb-4">
-            We'd love to hear from you! Please fill out the form below or call
-            us directly.
+            If you live within the highlighted location area, we'd love to hear
+            from you! Please fill out the form below or call us directly.
           </p>
           <p className="text-gray-800 font-semibold mb-6">
             📞 Phone:{" "}
@@ -80,6 +81,20 @@ const Contact = () => {
                 name="name"
                 id="name"
                 value={formData.name}
+                onChange={handleChange}
+                className="px-4 py-2 border rounded-lg text-gray-700"
+                required
+              />
+            </div>
+            <div className="flex flex-col">
+              <label htmlFor="name" className="text-gray-800 text-lg mb-2">
+                Project Location
+              </label>
+              <input
+                type="text"
+                name="location"
+                id="location"
+                value={formData.location}
                 onChange={handleChange}
                 className="px-4 py-2 border rounded-lg text-gray-700"
                 required
