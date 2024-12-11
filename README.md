@@ -152,6 +152,7 @@ import ghPages from "vite-plugin-gh-pages";
 export default defineConfig({
   plugins: [react(), ghPages()],
   base: "/REPOSITORY_NAME/", // Replace with your GitHub repository name
+ //e.g "https://elliottyoung1.github.io/REPO_NAME/"
 });
 ```
 
