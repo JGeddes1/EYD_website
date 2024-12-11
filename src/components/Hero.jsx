@@ -23,7 +23,7 @@ const HeroSection = () => {
 
   return (
     <section
-      className="relative w-full z-0"
+      className="relative h-full w-full z-0"
       style={{ height: "calc(100vh - 5rem)" }} // Adjust the 4rem to match your navbar height
     >
       {/* Background Slideshow */}
@@ -47,7 +47,7 @@ const HeroSection = () => {
           alt="Logo"
           className="h-48 w-auto lg:pl-10 md:pl-7 min-[320px]:pl-7 sm:h-64 md:h-96"
         />
-        <h1 className="text-slate-950 text-3xl sm:text-4xl md:text-6xl ">
+        <h1 className="text-slate-950 text-3xl sm:text-4xl font-bold">
           Welcome
         </h1>
         <p className="text-color-paleGreen text-base sm:text-lg md:text-2xl text-center">
@@ -56,7 +56,7 @@ const HeroSection = () => {
       </div>
 
       {/* Navigation Dots */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 ">
         {images.map((_, index) => (
           <button
             key={index}

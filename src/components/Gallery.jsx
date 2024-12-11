@@ -20,6 +20,7 @@ const Gallery = () => {
       images: [
         "src/assets/KingsAvenue/ele_1.jpg",
         "src/assets/KingsAvenue/ele_2.jpg",
+        "src/assets/KingsAvenue/Ground_Floor_Plan.jpg",
       ],
     },
     {
@@ -30,7 +31,7 @@ const Gallery = () => {
       images: [
         "src/assets/Parkside/0701_View_01_01.jpg",
         "src/assets/Parkside/0701_View_02_01.jpg",
-        "https://via.placeholder.com/300x200?text=Fullbeck+3",
+        "src/assets/Parkside/plans.jpg",
       ],
     },
     {
@@ -41,7 +42,7 @@ const Gallery = () => {
       images: [
         "src/assets/Swindale/0699_View_01_01.jpg",
         "src/assets/Swindale/0699_View_02_01.jpg",
-        "https://via.placeholder.com/300x200?text=Fullbeck+3",
+        "src/assets/Swindale/plans.jpg",
       ],
     },
   ];
@@ -122,11 +123,11 @@ const Gallery = () => {
                 </button>
               </div>
               {/* Image */}
-              <div className="h-10/12 flex justify-center">
+              <div className="h-full flex justify-center">
                 <InnerImageZoom
                   src={selectedProject.images[currentImageIndex]}
                   alt={selectedProject.title}
-                  className="max-h-[80vh] object-contain rounded-lg"
+                  className="max-h-[100vh] object-contain rounded-lg"
                 />
               </div>
 
